@@ -1,0 +1,22 @@
+<!doctype html>
+<!--script src="https://en.js.cx/test/libs.js"></script>
+<script src="test.js"></script> -->
+<script>
+
+const stringToCamelize = "-webkit-transition";
+function camelize(str) {
+  let splitStr = str.split("-");
+  let firstWord = splitStr.shift(splitStr);
+  console.log(firstWord);
+  // convert 1st letter of each item in splitStr to uppercase
+  let capitalized = splitStr.map((word) => word[0].toUpperCase() + word.slice(1));
+  capitalized.unshift(`${firstWord}`);
+  return capitalized.join('');
+  
+  //console.log(capitalized);  
+
+}
+console.log(camelize(stringToCamelize));
+</script>
+
+</html>
