@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shuffle</title>
+  </head>
+  <script>
+    function unique(arr) {
+      let result = [];
+      for (let item of arr) {
+        if (!result.includes(item)) result.push(item);
+      }
+
+      return result;
+    }
+
+    let strings = [
+      "Hare",
+      "Krishna",
+      "Hare",
+      "Krishna",
+      "Krishna",
+      "Krishna",
+      "Hare",
+      "Hare",
+      ":-O",
+    ];
+  </script>
+  <body></body>
+</html>
